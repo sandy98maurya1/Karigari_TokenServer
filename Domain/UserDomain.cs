@@ -26,20 +26,12 @@ namespace Domain
             return userData.GetUserByUserName(userName);
         }
 
-        public User GetUserByEmail(string Email)
-        {
-            return userData.GetUserByEmail(Email);
-        }
 
         public User GetUserById(int Id)
         {
             return userData.GetUserById(Id);
         }
 
-        public User GetUserByContact(string Contact)
-        {
-            return userData.GetUserByContact(Contact);
-        }
 
         public User UpdateUser(User user)
         {

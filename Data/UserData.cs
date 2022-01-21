@@ -18,17 +18,7 @@ namespace Data
         {
             return _dbcontext.Users.FirstOrDefault(x => x.Name == userName && x.Password == password);
         }
-
-        public User GetUserByContact(string Contact)
-        {
-            return _dbcontext.Users.FirstOrDefault(x => x.Contact == Contact);
-
-        }
-
-        public User GetUserByEmail(string Email)
-        {
-            return _dbcontext.Users.FirstOrDefault(x => x.Email == Email);
-        }
+        
 
         public User GetUserById(int Id)
         {
@@ -45,15 +35,11 @@ namespace Data
                          {
                              Id = u.Id,
                              Name = u.Name,
-                             Email = u.Email,
                              Password = u.Password,
                              Role = r.Name,
-                             Contact = u.Contact,
                              IsActive = u.IsActive,
-                             CreatedBy = u.CreatedBy,
-                             CreatedDate = u.CreatedDate,
-                             ModifiedDate = u.ModifiedDate,
                              RefreshToken = u.RefreshToken
+                             
                          };
 
             return result.FirstOrDefault();

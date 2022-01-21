@@ -96,8 +96,6 @@ namespace TokenGenerator.Controllers
                 new Claim(Constants.ClaimTypeId,userObj.Id.ToString()),
                 new Claim(Constants.ClaimTypeFullName, userObj.Name),
                 new Claim(ClaimTypes.Role, userObj.Role.ToUpper()),
-                new Claim(Constants.ClaimContact, userObj.Contact),
-                new Claim(Constants.ClaimTypeEmail, userObj.Email)
             };
 
             var token = new JwtSecurityToken(
