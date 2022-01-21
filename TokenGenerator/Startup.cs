@@ -97,7 +97,7 @@ namespace TokenGenerator
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "karigari", Version = "v1" });
             });
 
-            //services.AddCors();
+            services.AddCors();
             services.AddControllers();
 
         }
@@ -115,12 +115,12 @@ namespace TokenGenerator
             app.UseHttpsRedirection();
 
             app.UseRouting();
-            
+
             //app.UseCors(MyAllowSpecificOrigins);
-            //app.UseCors(x => x
-            //   .AllowAnyOrigin()
-            //   .AllowAnyMethod()
-            //   .AllowAnyHeader()); // allow credentials
+            app.UseCors(x => x
+               .AllowAnyOrigin()
+               .AllowAnyMethod()
+               .AllowAnyHeader()); // allow credentials
 
 
             app.ConfigureExceptionHandler(logger);
