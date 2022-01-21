@@ -28,7 +28,7 @@ namespace TokenServer
         public void ConfigureServices(IServiceCollection services)
         {
             //services.AddIdentityServer().
-                services.AddIdentityServer(options =>
+            services.AddIdentityServer(options =>
                 {
                     options.Authentication.CookieLifetime = new TimeSpan(0, 0, 0, 30);
                     options.Authentication.CookieSlidingExpiration = true;
@@ -40,11 +40,11 @@ namespace TokenServer
                     options.TokenCleanupInterval = 30;
                 }).
                 AddInMemoryApiResources(Config.GetApiResources).
-                AddInMemoryClients(Config.GetClients).
-                AddTestUsers(Config.GetTestUsers).
+                AddInMemoryClients(Clients.GetClients).
                 AddProfileService<ProfileService>();
 
-
+            services.AddTransient<ResourceOwnerPasswordValidator, ResourceOwnerPasswordValidator>();
+            services.AddTransient<IProfileService, ProfileService>();
 
             services.AddControllers();
         }

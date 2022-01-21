@@ -9,5 +9,9 @@
     <PackageReference Include="IdentityServer4.EntityFramework" Version="3.1.2" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Models\Models.csproj" />
+  </ItemGroup>
+
 
 </Project>

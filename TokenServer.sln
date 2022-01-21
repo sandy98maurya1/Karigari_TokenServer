@@ -3,7 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.32112.339
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TokenServer", "TokenServer\TokenServer.csproj", "{7F4F9B6E-04E4-4F77-A771-6C5D472F67A5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TokenServer", "TokenServer\TokenServer.csproj", "{7F4F9B6E-04E4-4F77-A771-6C5D472F67A5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Contracts", "Contracts\Contracts.csproj", "{66BABADA-280F-4BF0-8D98-D1D9FF0770D2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Models", "Models\Models.csproj", "{31D7DD93-3B8F-4A11-9C29-0E0D8BAFC5E3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain.csproj", "{144ABCA5-45D2-400E-9692-01744EF448D1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data", "Data\Data.csproj", "{027BE0B1-01F7-4774-B943-CDEE1F2D38A7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TokenGenerator", "TokenGenerator\TokenGenerator.csproj", "{FA9BAB66-2988-4369-A87C-CBCE35832F32}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Utility", "Utility\Utility.csproj", "{17838F6E-40F6-42A3-8E70-45E6D5E56A3D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +27,30 @@ Global
 		{7F4F9B6E-04E4-4F77-A771-6C5D472F67A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7F4F9B6E-04E4-4F77-A771-6C5D472F67A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7F4F9B6E-04E4-4F77-A771-6C5D472F67A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66BABADA-280F-4BF0-8D98-D1D9FF0770D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66BABADA-280F-4BF0-8D98-D1D9FF0770D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66BABADA-280F-4BF0-8D98-D1D9FF0770D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66BABADA-280F-4BF0-8D98-D1D9FF0770D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31D7DD93-3B8F-4A11-9C29-0E0D8BAFC5E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31D7DD93-3B8F-4A11-9C29-0E0D8BAFC5E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31D7DD93-3B8F-4A11-9C29-0E0D8BAFC5E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31D7DD93-3B8F-4A11-9C29-0E0D8BAFC5E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{144ABCA5-45D2-400E-9692-01744EF448D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{144ABCA5-45D2-400E-9692-01744EF448D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{144ABCA5-45D2-400E-9692-01744EF448D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{144ABCA5-45D2-400E-9692-01744EF448D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{027BE0B1-01F7-4774-B943-CDEE1F2D38A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{027BE0B1-01F7-4774-B943-CDEE1F2D38A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{027BE0B1-01F7-4774-B943-CDEE1F2D38A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{027BE0B1-01F7-4774-B943-CDEE1F2D38A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA9BAB66-2988-4369-A87C-CBCE35832F32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA9BAB66-2988-4369-A87C-CBCE35832F32}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA9BAB66-2988-4369-A87C-CBCE35832F32}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA9BAB66-2988-4369-A87C-CBCE35832F32}.Release|Any CPU.Build.0 = Release|Any CPU
+		{17838F6E-40F6-42A3-8E70-45E6D5E56A3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17838F6E-40F6-42A3-8E70-45E6D5E56A3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17838F6E-40F6-42A3-8E70-45E6D5E56A3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17838F6E-40F6-42A3-8E70-45E6D5E56A3D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
